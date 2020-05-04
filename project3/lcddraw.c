@@ -127,30 +127,30 @@ void drawCube(int x, int y) {
     }
   }
 }
-void drawSquare(int x, int y) {
+void drawSquare(int x, int y, u_int color) {
   for(int i = 0; i < 40; i++) {
     for(int j = 0; j < 40; j++) {
-      drawPixel((x-20)+i,(y-20)+j,COLOR_BLUE);
+      drawPixel((x-20)+i,(y-20)+j,color);
     }
   }
 }
-void drawTriangle(int x, int y) {
+void drawTriangle(int x, int y, u_int color) {
   static int k = 0;
   for(int i = 0; i < 40; i++) {
     if(i != 0 && i % 2 == 0) k++;
     for(int j = 0; j < i; j++) {
-      drawPixel(x+j-k,(y-20)+i,COLOR_YELLOW);
+      drawPixel(x+j-k,(y-20)+i,color);
     }
   }
   k = 0;
 }
-void drawDiamond(int x, int y) {
+void drawDiamond(int x, int y, u_int color) {
   for(int i = 0; i < 20; i++) {
     for(int j = 0; j < i; j++) {
-      drawPixel(x+i-j,(y-20)+i, COLOR_RED);
-      drawPixel(x-i+j,(y+20)-i, COLOR_RED);
-      drawPixel((x-20)+i,y-i+j, COLOR_RED);
-      drawPixel((x+20)-i,y+i-j, COLOR_RED);
+      drawPixel(x+i-j,(y-20)+i, color);
+      drawPixel(x-i+j,(y+20)-i, color);
+      drawPixel((x-20)+i,y-i+j, color);
+      drawPixel((x+20)-i,y+i-j, color);
     }
   }
 }

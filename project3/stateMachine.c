@@ -46,7 +46,7 @@ void g_on() {
 //Turns on the Red & Green LED
 void both_on() {
   led_changed = green_on = 1;
-  led_changed = red_on = 1;;
+  led_changed = red_on = 1;
   led_update();
 }
 //Advances the LED's to the next state

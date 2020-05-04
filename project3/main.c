@@ -8,13 +8,13 @@
 
 
 void main(void) {
-  
+  g_on();
   configureClocks();
   switch_init();
   buzzer_init();
-  led_init();
   lcd_init();
-
+  led_init();
+  
   clearScreen(COLOR_BLACK);
   drawString5x7(44,30,"Welcome",COLOR_GREEN,COLOR_BLACK);
   drawString5x7(47,40,"to the",COLOR_GREEN,COLOR_BLACK);

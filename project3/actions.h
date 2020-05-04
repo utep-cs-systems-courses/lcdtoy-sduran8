@@ -7,13 +7,13 @@
 #include "led.h"
 
 
-void action1() {
+void changeShape() {
 }
-void action2() {
+void changeColor() {
 }
-void action3() {
+void mirrorShape() {
 }
-void action4() {
+void shutOff() {
 }
 
 

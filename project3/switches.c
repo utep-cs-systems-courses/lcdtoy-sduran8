@@ -41,22 +41,22 @@ void switch_interrupt_handler() {
   if(val_1) {
     switch_state_down = val_1;
     switch_state_changed = 1;
-    action1();
+    changeShape();
   }
   else if(val_2) {
     switch_state_down = val_2;
     switch_state_changed = 1;
-    action2();
+    changeColor();
   }
   else if(val_3) {
     switch_state_down = val_3;
     switch_state_changed = 1;
-    action3();
+    mirrorShape();
   }
   else if(val_4) {
     switch_state_down = val_4;
     switch_state_changed = 1;
-    action4();
+    shutOff();
   }
   else {
     switch_state_down = 0;
